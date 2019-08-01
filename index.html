@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layuiAdmin pro - 通用后台管理模板系统（单页面专业版）</title>
+    <link rel="stylesheet" href="css/he.css">
+    <link rel="stylesheet" href="css/med.css" media="screen and (max-width: 995px)">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/echarts.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+    </header>
+    <!-- 侧边导航栏 -->
+    <nav>
+        <!-- 由AddHtml() 动态添加nav内容 -->
+    </nav>
+    <!-- 主要内容 主页部分 -->
+    <main>
+        <div class="main-box">
+
+            <div class="section-all">
+                <div id="left" class="section-all-left">
+                    <div class="fast">
+                        <div class="fast-header">快捷方式
+                            <div class="dynamic-head1">
+                                <span class="active1"></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="fast-body">
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-yibiaopan" style="font-size: 30px;"></i> </a>
+                                    <p>主页一</p>
+                                </div>
+
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-xindiantu01" style="font-size: 30px;"></i> </a>
+                                    <p>主页二</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-fenceng" style="font-size: 30px;"></i> </a>
+                                    <p>弹层</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-huabanfuben" style="font-size: 30px;"></i> </a>
+                                    <p>聊天</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-zhinanzhen" style="font-size: 30px;"></i> </a>
+                                    <p>进度条</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-gongdan" style="font-size: 30px;"></i> </a>
+                                    <p>工单</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-yonghu" style="  font-size: 30px;"></i> </a>
+                                    <p>用户</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="  font-size: 30px;"></i> </a>
+                                    <p>设置</p>
+                                </div>
+
+                            </div>
+
+                            <div class="fast-body" style="display: none;">
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+                                <div class="fast-b1">
+                                    <a href="#"><i class="iconfont icon-shezhi" style="font-size: 30px;"></i> </a>
+                                    <p>我的资料</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <script>
+                        $(".fast-header span").hover(function () {
+                            //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+                            var _index = $(this).index();
+                            //让内容框的第 _index 个显示出来，其他的被隐藏
+                            $(".fast-body").eq(_index).show().siblings().hide();
+                            //改变选中时候的选项框的样式，移除其他几个选项的样式
+                            $(this).addClass("active1").siblings().removeClass("active1");
+                        });
+                    </script>
+
+
+
+                    <div class="backlog">
+                        <div class="backlog-header">快捷方式
+                            <div class="backlog-head">
+                                <span class="active-2"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="backlog-body">
+                            <div class="backlog-bbody">
+                                <div class="backlog-body1">
+                                    <p>待审评论</p>
+                                    <span>66</span>
+                                </div>
+
+                                <div class="backlog-body1">
+                                    <p>待审帖子</p>
+                                    <span>12</span>
+                                </div>
+
+                                <div class="backlog-body1">
+                                    <p>待审商品</p>
+                                    <span>99</span>
+                                </div>
+
+                                <div class="backlog-body1">
+                                    <p>待发货</p>
+                                    <span>20</span>
+                                </div>
+                            </div>
+
+                            <div class="backlog-bbody">
+                                <div class="backlog-body1">
+                                    <p>待审友情链接</p>
+                                    <span>5</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        $(".backlog-head span").hover(function () {
+                            //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+                            var _index = $(this).index();
+                            //让内容框的第 _index 个显示出来，其他的被隐藏
+                            $(".backlog-bbody").eq(_index).show().siblings().hide();
+                            //改变选中时候的选项框的样式，移除其他几个选项的样式
+                            $(this).addClass("active-2").siblings().removeClass("active-2");
+                        });
+                    </script>
+
+
+                    <div class="main-card" style="background: white;margin-top:15px;">
+                        <div class="article-card-header">
+                            数据概览
+                            <div class="dynamic-head3">
+                                <span class="active3"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="main-card-body" id="tubiaokuandu">
+                            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                            <div id="main" style="width: 100%;height:332px;"></div>
+                            <script type="text/javascript">
+                                var worldMapContainer = document.getElementById('main');
+                                var left = document.getElementById('tubiaokuandu');
+                                //用于使chart自适应高度和宽度,通过窗体高宽计算容器高宽
+                                var resizeWorldMapContainer = function () {
+                                    worldMapContainer.style.width = left.innerWidth + 'px';
+                                };
+
+                                //设置容器高宽
+                                resizeWorldMapContainer();
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(worldMapContainer);
+
+                                // 指定图表的配置项和数据
+                                var option = {
+                                    title: {
+                                        text: '今日流量趋势',
+                                        left: 'center',
+                                        textStyle: {
+                                            Color: 'red',
+                                        }
+                                    },
+
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        axisPointer: {
+                                            type: 'cross',
+                                            label: {
+                                                backgroundColor: '#6a7985'
+                                            }
+                                        }
+                                    },
+
+                                    grid: {
+                                        left: '2%',
+                                        right: '3%',
+                                        bottom: '2%',
+                                        containLabel: true
+                                    },
+
+                                    xAxis: [{
+                                        type: 'category',
+                                        boundaryGap: false,
+                                        data: ['06:00', '06:30', '07:00', '07:30', '08:00', '08:30',
+                                            '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
+                                            '12:00', '12:30', '13:00', '13:30', '14:00', '14:30',
+                                            '15:00', '15:30', '16:00', '16:30', '17:00', '17:30',
+                                            '18:00', '18:30', '19:00', '19:30', '20:00', '20:30',
+                                            '21:00', '21:30', '22:00', '22:30', '23:00', '23:30'
+                                        ]
+                                    }],
+                                    yAxis: [{
+                                        type: 'value'
+                                    }],
+                                    series: [{
+                                            name: 'PV',
+                                            type: 'line',
+                                            stack: '总量',
+                                            areaStyle: {},
+                                            data: [111, 222, 333, 444, 555, 666, 3333, 33333, 55555, 66666,
+                                                33333, 3333, 6666, 11888, 26666, 38888, 56666, 42222, 39999,
+                                                28888, 17777, 9666, 6555, 5555, 3333, 2222, 3111, 6999,
+                                                5888, 2777, 1666, 999, 888, 777, 666, 555, 444
+                                            ]
+                                        },
+                                        {
+                                            name: 'UV',
+                                            type: 'line',
+                                            stack: '总量',
+                                            areaStyle: {},
+                                            data: [11, 22, 33, 44, 55, 66, 333, 3333, 5555, 12666, 3333, 333,
+                                                666, 1188, 2666, 3888, 6666, 4222, 3999, 2888, 1777, 966,
+                                                655, 555, 333, 222, 311, 699, 588, 277, 166, 99, 88, 77, 66,
+                                                55, 44
+                                            ]
+                                        },
+                                    ]
+                                };
+
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart.setOption(option);
+
+                                //用于使chart自适应高度和宽度
+                                window.onresize = function () {
+                                    //重置容器高宽
+                                    resizeWorldMapContainer();
+                                    myChart.resize();
+                                };
+                            </script>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <script>
+                        $(".article-card-header span").hover(function () {
+                            //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+                            var _index = $(this).index();
+                            //让内容框的第 _index 个显示出来，其他的被隐藏
+                            $(".main-card-body").eq(_index).show().siblings().hide();
+                            //改变选中时候的选项框的样式，移除其他几个选项的样式
+                            $(this).addClass("active3").siblings().removeClass("active3");
+                        });
+                    </script>
+
+                    <div class="top-search">
+                        <ul class="top-search-header">
+                            <li class="resou">今日热搜</li>
+                            <li class="retie">今日热帖</li>
+                        </ul>
+                        <div class="top-search-body">
+                            <table class="top-search-body1">
+                                <tr style="background-color: #f2f2f2;">
+                                    <td></td>
+                                    <td>关键词</td>
+                                    <td>搜索次数</td>
+                                    <td>用户数</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="">贤心是男是女</a></td>
+                                    <td>66666</td>
+                                    <td>8888</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="">Java程序员能找到女朋友吗</a></td>
+                                    <td>67</td>
+                                    <td>42424</td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="">此表格是静态模拟数据</a></td>
+                                    <td>547875</td>
+                                    <td>2454</td>
+
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>424</td>
+                                    <td>353</td>
+
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>35434</td>
+                                    <td>767</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>42452</td>
+                                    <td>4252452</td>
+
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>534</td>
+                                    <td>424</td>
+
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>244</td>
+                                    <td>2404</td>
+
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>2452</td>
+                                    <td>2452</td>
+
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td><a href="">layui官方教程</a></td>
+                                    <td>54642</td>
+                                    <td>425</td>
+
+                                </tr>
+
+
+
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="section-all-right">
+                    <div class="versions">
+                        <div class="versions-header">版本信息</div>
+                        <div class="versions-body">
+                            <div class="versions-table">
+                                <div class="versions-table1">
+                                    <span>当前版本</span>
+                                    <div>
+                                        v1.2.1 pro
+                                        <a href="#">更新日志</a>
+                                    </div>
+                                </div>
+                                <div class="versions-table1">
+                                    <span>基于框架</span>
+                                    <div>
+                                        layui-v2.4.5
+                                    </div>
+                                </div>
+                                <div class="versions-table1">
+                                    <span>主要特色</span>
+                                    <div>
+                                        单页面 / 响应式 / 清爽 / 极简
+
+                                    </div>
+                                </div>
+
+                                <div class="versions-table2">
+                                    <span>获取渠道</span>
+                                    <div>
+                                        <a href="">获取授权</a>
+                                        <a href="">立即下载</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="result">
+                        <div class="result-header">效果报告</div>
+                        <div class="result-body">
+                            <div class="result-body1">
+                                <span>65%</span>
+                                <h3>转化率（日同比28% ▲）</h3>
+                            </div>
+                            <div class="result-body2">
+                                <div class="result-body22"></div>
+                            </div>
+                            <div class="result-body1" style="margin-top: 27px">
+                                <span>32%</span>
+                                <h3>签到率（日同比11% ▼）</h3>
+                            </div>
+                            <div class="result-body2">
+                                <div class="result-body22" style="width:32%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result">
+                        <div class="versions-header">实时监控</div>
+                        <div class="result-body">
+                            <div class="result-body1">
+                                <span>58%</span>
+                                <h3>CPU使用率</h3>
+                            </div>
+                            <div class="result-body2">
+                                <div class="result-body22" style="width:58%"></div>
+                            </div>
+                            <div class="result-body1" style="margin-top: 27px">
+                                <span>90%</span>
+                                <h3>内存占用率</h3>
+                            </div>
+                            <div class="result-body2">
+                                <div class="result-body22" style="width:90%;background:orangered"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dynamic">
+                        <div class="dynamic-header">产品动态
+                            <div class="dynamic-head">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <ul class="dynamic-body">
+                            <li><a href="#">layuiAdmin 快速上手文档</a></li>
+                            <li><a href="#">layuiAdmin 会员讨论专区</a></li>
+                            <li><a href="#">获得layui官方后台模板系统</a></li>
+                        </ul>
+                    </div>
+                    <script>
+                        $(".dynamic-head span").hover(function () {
+                            //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+                            var _index = $(this).index();
+                            //让内容框的第 _index 个显示出来，其他的被隐藏
+                            $(".dynamic-body li").eq(_index).show().siblings().hide();
+                            //改变选中时候的选项框的样式，移除其他几个选项的样式
+                            $(this).addClass("active").siblings().removeClass("active");
+                        });
+                    </script>
+                    <div class="writer">
+                        <div class="writer-header">作者心语</div>
+                        <div class="writer-body">
+                            <p>一直以来，layui 秉承无偿开源的初心，虔诚致力于服务各层次前后端 Web
+                                开发者，在商业横飞的当今时代，这一信念从未动摇。即便身单力薄，仍然重拾决心，埋头造轮，以尽可能地填补产品本身的缺口。</p>
+                            <p>在过去的一段的时间，我一直在寻求持久之道，已维持你眼前所见的一切。而 layuiAdmin 是我们尝试解决的手段之一。我相信真正有爱于 layui
+                                生态的你，定然不会错过这一拥抱吧。
+                            </p>
+                            <p>子曰：君子不用防，小人防不住。请务必通过官网正规渠道，获得<a href="">layuiAdmin</a>!</p>
+                            <p>—— 贤心（<a href="">layui.com</a>）</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+    <!-- 由AddHtml() 动态添加harbour内容 -->
+</body>
+<script src="js/left-nav.js"></script>
+
+</html>

@@ -1,0 +1,112 @@
+.main-body {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 100%;
+    background: white;
+    margin-bottom: 15px;
+    padding: 45px 40px 0px;
+}
+
+.body-head {
+    padding: 0 15px;
+    border-bottom: 1px solid #f6f6f6; 
+    height: 42px;
+    line-height: 42px;
+    color: #333333;
+}
+
+.textae {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 10px;
+    display: block;
+    border: 1px solid #f6f6f6;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.con1 textarea::placeholder {
+    color: #cfcfcf;
+}
+
+.con1 {
+    padding-bottom: 50px;
+}
+
+.con11 button {
+    border: none;
+    outline: none;
+    line-height: 38px;
+    padding: 0px 18px;
+    color: #ffffff;
+    background: #009688;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.con11 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.con11 i {
+    font-size: 24px;
+    color: #c4cbcf;
+    padding-right: 10px;
+}
+
+.con11 button:hover,
+.con3 button:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.con2 {
+    margin-bottom: 60px;
+}
+
+.con2-head img{
+    width: 46px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.con2-head > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.con2-head > div:first-child strong {
+    color: #337ab7;
+}
+
+.con2-head > p{
+    padding-top: 10px;
+}
+
+.con3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.con3 button {
+    border: none;
+    outline: none;
+    line-height: 26px;
+    padding: 5px 30px;
+    color: #ffffff;
+    background: #009688;
+    border-radius: 2px;
+    display: inline-block;
+}

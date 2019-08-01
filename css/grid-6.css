@@ -1,0 +1,25 @@
+.main-body {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.main-body div {
+    width: 33.3%;
+    height: 413px;
+    background: white;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.main-body div span{
+    line-height: 413px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.main-body div:hover {
+    background: #fafafa;
+}

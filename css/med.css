@@ -1,0 +1,24 @@
+main,nav,ul.li{
+    transition: all 0.5s;
+}
+main{
+    position: relative;
+    top: 0;
+    left: 0px;
+    width:100%;
+    height: calc(100% - 50px);
+}
+nav{
+    width: 220px;
+    height: 100%;
+    background-color: #20222A;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: -220px;
+}
+header .header-left{
+    position: absolute;
+    left: 0px;
+    padding: 0 10px;
+}

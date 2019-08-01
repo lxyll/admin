@@ -1,0 +1,24 @@
+.main-body {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 49.4%;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.body-head {
+    padding: 0 15px;
+    border-bottom: 1px solid #f6f6f6; 
+    height: 42px;
+    line-height: 42px;
+    color: #333333;
+}
+
+/* 以上是公共部分 */
+

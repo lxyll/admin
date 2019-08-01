@@ -1,0 +1,228 @@
+@import url(public-css.css);
+
+
+
+.main-conter {
+    width: 100%;
+    /* height: 994px; */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conter-left {
+    width: 66.666666667%;
+    padding: 7.5px;
+}
+
+.conter-right {
+    width: 33.333333333%;
+    padding: 7.5px;
+}
+
+.left1,
+.left2,
+.right1,
+.right2,
+.right3 {
+    width: 100%;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.left1-head,
+.right1-head,
+.right2-head,
+.right3-head {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    line-height: 43px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.left1-head span:last-child {
+    color: #3390ff;
+    cursor: pointer;
+}
+
+.left1-con,
+.right1-con,
+.right2-con,
+.right3-con {
+    padding: 10px 15px;
+}
+
+.left1-con ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.left1-con li {
+    padding: 5px;
+    color: #777777;
+    width: 32%;
+}
+
+.left1-con li>div {
+    background: #f8f8f8;
+    padding: 21px;
+}
+
+.left1-con li>div>span {
+    font-size: 16px;
+    color: #333333;
+}
+
+.left1-con li>div span:hover,
+.right1-con div ul li a:hover {
+    color: #3390ff;
+    transition: all 0.8s;
+}
+
+.right1-con div ul li button:hover {
+    color: #009688;
+    transition: all 0.8s;
+    border: 1px solid #009688;
+    cursor: pointer;
+}
+
+.left1-con li i {
+    font-size: 24px;
+    color: #009688;
+}
+
+.left1-con li>div p {
+    padding: 12px 0;
+}
+
+.left1-con li>div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left1-con li>div div span:first-child {
+    font-size: 12px;
+}
+
+.left1-con li>div div span:last-child {
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.left2-con ul {
+    padding: 10px 15px;
+}
+
+.left2-con li {
+    padding: 15px 0;
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #eee;
+}
+
+.left2-con li div:first-child {
+    width: 32px;
+    height: 32px;
+    background: #009688;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left2-con li div:first-child::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: rgba(216, 228, 251, 0.8);
+    position: absolute;
+    top: 20px;
+    left: 12px;
+}
+
+.left2-con li span {
+    color: #bbbbbb;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.left2-con li a {
+    color: #01aaed;
+}
+
+.right1-con div {
+    padding-left: 10px;
+}
+
+.right1-con div ul {
+    display: flex;
+    justify-content: start;
+    flex-flow: wrap;
+}
+
+.right1-con div ul a {
+    padding-right: 50px;
+    color: #666666;
+    margin-bottom: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.right1-con div ul button {
+    background: none;
+    border: none;
+    border: 1px solid #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right3-con ul {
+    display: flex;
+    justify-content: start;
+    flex-flow: wrap;
+}
+
+.right3-con ul li {
+    padding: 10px 0 10px 10px;
+    width: 47%;
+}
+
+.right3-con ul li a {
+    display: flex;
+    justify-content: start;
+    color: #777777;
+}
+
+.right3-con ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #009688;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right3-con ul li i::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: rgba(216, 228, 251, 0.8);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}

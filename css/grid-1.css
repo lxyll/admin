@@ -1,0 +1,20 @@
+.main-body {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 15.8%;
+    margin: 5px;
+    height: 277px;
+    background: white;
+    /* background: red; */
+}
+
+
+
+/* 以上是公共部分 */
+
